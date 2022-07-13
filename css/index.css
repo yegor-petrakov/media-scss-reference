@@ -1,0 +1,27 @@
+/**
+*
+* Testing
+*
+**/
+.layer {
+  height: 70vh;
+}
+
+@media (max-width: 360px) {
+  .layer {
+    background-color: deeppink;
+  }
+  .layer::before {
+    content: "Phone Viewport";
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .layer {
+    background-color: orange;
+  }
+  .layer::before {
+    content: "Large Phone Viewport";
+  }
+}
+/*# sourceMappingURL=index.css.map */

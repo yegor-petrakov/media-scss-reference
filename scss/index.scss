@@ -1,0 +1,23 @@
+@import "breakpoints";
+
+$lightBlue: rgb(133, 239, 255);
+$blue: rgb(0, 149, 255);
+$orange: orange;
+$deepPink: deeppink;
+
+.layer {
+    height: 70vh;
+    @include media("<=phone") {
+        background-color: $deepPink;
+        &::before {
+            content: "Phone Viewport";
+        }
+    }
+    
+    @include media(">phone", "<=425px") {
+        background-color: $orange;
+        &::before {
+            content: "Large Phone Viewport";
+        }
+    }
+}
